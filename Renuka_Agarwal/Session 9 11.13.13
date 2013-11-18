@@ -1,0 +1,6 @@
+rails new <app name>
+rails cd <new app>
+rails s → start server 
+http://0.0.0.0:3000/ → way to access the web server 
+rails g controller games index
+subl . --> opens up sublime for the directory you're looking at 
