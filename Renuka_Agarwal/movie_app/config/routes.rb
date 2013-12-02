@@ -1,10 +1,7 @@
 MovieApp::Application.routes.draw do
-  get "movie/index"
-
-  root 'movie#index'
-
-  resources :movies
-
+  root "movies#index"
+  resources :movies, only: [:index, :new, :create, :show, :edit, :update, :destroy] 
+  get "search", to: "search#index"
 end 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
